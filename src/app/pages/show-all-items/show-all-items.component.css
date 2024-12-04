@@ -1,0 +1,86 @@
+/* Container Styling */
+.container {
+    width: 90%;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Heading Styling */
+.container h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Student List Section */
+.student-List {
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+/* Table Head Styling */
+table thead {
+    background-color: #4CAF50;
+    color: white;
+    text-align: left;
+}
+
+table thead th {
+    padding: 10px;
+}
+
+/* Table Body Styling */
+table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tbody td {
+    padding: 10px;
+}
+
+/* Hover Effects */
+table tbody tr:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table thead {
+        display: none;
+    }
+
+    table tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    table tbody td {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px;
+    }
+
+    table tbody td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+}

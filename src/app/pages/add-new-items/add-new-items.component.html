@@ -1,1 +1,32 @@
-<p>add-new-items works!</p>
+<div class="full-width-container">
+    <div class="container">
+        <h1>Register New Item</h1>
+
+       
+        <div class="row mb-3">
+            <div class="col-md-12">
+                <label for="name" class="form-label"> Item Name</label>
+                <input type="text" class="form-control" id="name" [(ngModel)]="item.name"  placeholder="Enter Item Name">
+            </div>
+        </div>
+
+        
+        <div class="row mb-3">
+            <div class="col-md-12">
+                <label for="rentalPerday" class="form-label">Rental Per Day</label>
+                <input type="number" class="form-control" id="rentalPerday" [(ngModel)]="item.rentalPerDay"  placeholder="Enter Rental Per Day">
+            </div>
+        </div>
+
+        
+        <div class="row mb-3">
+            <div class="col-md-12">
+                <label for="finePerDay" class="form-label">Fine Per Day</label>
+                <input type="number" class="form-control" id="finePerDay" [(ngModel)]="item.finePerDay"  placeholder="Enter Fine Per Day">
+            </div>
+        </div>
+
+        
+        <button type="submit" class="btn btn-register" (click)="addNewItem()" >Register</button>
+    </div>
+</div>
