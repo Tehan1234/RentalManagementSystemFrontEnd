@@ -1,1 +1,39 @@
-<p>search-customer works!</p>
+<div class="container">
+    <div class="header">
+        <h1>Search  Customer</h1>
+        
+    </div>
+
+    <div class="form-group">
+        <label for="searchVisitor" class="form-label">Search Customer:</label>
+        <input
+            type="text"
+            class="form-control1"
+            id="searchVisitor"
+            placeholder="Enter Customer Name"
+            [(ngModel)]="name"
+        />
+        <button class="btn-search"  (click)="serachCustomer()">Search</button>
+    </div>
+
+    <!-- Visitor Details Section -->
+    <div *ngIf="customer">
+        <div class="row">
+            <div class="col-md-6 form-group">
+                <label for="idNumber" class="form-label">Customer ID</label>
+                <input type="text" class="form-control" [value]="customer.customerId" id="idNumber" readonly />
+            </div>
+            <div class="col-md-6 form-group">
+                <label for="contactNumber" class="form-label">Contact Number</label>
+                <input type="text" class="form-control" [value]="customer.contact" id="contactNumber" readonly />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 form-group">
+                <label for="city" class="form-label">City</label>
+                <input type="text" class="form-control" [value]="customer.city" id="city" readonly />
+            </div>
+        </div>
+    </div>
+</div>

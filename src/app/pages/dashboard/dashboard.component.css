@@ -1,74 +1,43 @@
-/* Container Styling */
-.container {
-    max-width: 400px;
-    margin: 10px auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-left: 7%;
+/* Wrapper for both containers */
+.container-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between the containers */
+    margin: 20px auto;
+    max-width: 90%;
 }
 
-/* Row Styling */
-.row {
-    margin-bottom: 15px;
-    display: flex;
-    justify-content: center;
-}
-h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 20px;
-    font-weight: bold;
+/* Styling for each container */
+.container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 45%; /* Adjust width as necessary */
 }
 
 /* Button Styling */
 button {
-    width: 80%;
-    padding: 10px 15px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #fff;
-    background-color: #007bff;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #4CAF50;
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1rem;
 }
 
-/* Hover Effects */
 button:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
+    background-color: #45a049;
 }
 
-/* Specific Button Colors */
-button:nth-child(1) {
-    background-color: #28a745; /* Green for Add */
-}
-button:nth-child(1):hover {
-    background-color: #218838;
-}
-
-button:nth-child(2) {
-    background-color: #17a2b8; /* Teal for Search */
-}
-button:nth-child(2):hover {
-    background-color: #138496;
-}
-
-button:nth-child(3) {
-    background-color: #ffc107; /* Yellow for Update */
-    color: #212529;
-}
-button:nth-child(3):hover {
-    background-color: #e0a800;
-}
-
-button:nth-child(4) {
-    background-color: #dc3545; /* Red for Delete */
-}
-button:nth-child(4):hover {
-    background-color: #c82333;
+/* Heading Styling */
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
 }
