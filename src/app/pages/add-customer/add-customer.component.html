@@ -1,0 +1,25 @@
+<div class="full-width-container">
+    <div class="container">
+        <h1>Register New Visitor</h1>
+
+        <div class="row mb-3">
+            <div class="col-md-6 left-align">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="fullName" [(ngModel)]="customer.name" placeholder="Full Name">
+            </div>
+            <div class="col-md-6 right-align">
+                <label for="contact" class="form-label">Contact</label>
+                <input type="text" class="form-control" id="contact" [(ngModel)]="customer.contact" placeholder="Contact">
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-12">
+                <label for="city" class="form-label">City</label>
+                <input type="text" class="form-control" id="city" [(ngModel)]="customer.city" placeholder="City">
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-register" (click)="addNewCustomer()">Register</button>
+    </div>
+</div>
